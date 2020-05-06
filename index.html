@@ -26,25 +26,17 @@
             <a class="nav-link" href="#showcase-nav">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#showcase-nav">About</a>
+            <a class="nav-link" href="#services2">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#showcase-nav">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#showcase-nav">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
 
-        <!-- TO DO: MOVE RESPONSIVE NAV TO ITS OWN CONTAINER (#RESPONSIVE-NAV)
-        SO THE JAVASCRIPT SCROLL STYLES WON'T TARGET THE RESPONSIVE NAV.
-      RIGHT NOW THE ISSUE IS THAT WHENEVER THE RESPONSIVE NAV SHOWS,
-    THE BACKGROUND IS ALWAYS TRANSPARENT UNTIL YOU SCROLL AND IT RESIZES,
-  IN WHICH CASE THE BACKGROUND TURNS INTO BLUETWO. I ALWAYS WANT THE
-RESPONSIVE NAV BACKGROUND TO BE BLUETWO, AND I NEVER WANT IT TO RESIZE.
-MOVING IT TO ITS OWN CONTAINER WOULD FIX THIS, HOWEVER A LOT OF THE CSS
-PATHS AND MEDIA QUERY PATHS WOULD NEED TO BE AMMENDED. DO THIS AT
- A LATER DATE -->
+        <!-- Responsive Navigation Menu -->
         <div class="responsive-brand">
           <div class="brand-container">
             <a href="#"
@@ -55,12 +47,13 @@ PATHS AND MEDIA QUERY PATHS WOULD NEED TO BE AMMENDED. DO THIS AT
         </div>
         <ul class="responsive-nav">
           <li class="nav-item"><a href="#showcase-nav">Home</a></li>
-          <li class="nav-item"><a href="#showcase-nav">About</a></li>
-          <li class="nav-item"><a href="#showcase-nav">Services</a></li>
-          <li class="nav-item"><a href="#showcase-nav">Contact</a></li>
+          <li class="nav-item"><a href="#services2">About</a></li>
+          <li class="nav-item"><a href="#services">Services</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
+      <!-- Showcase -->
       <section id="showcase">
         <div class="title-container">
           <h1 class="main-title">
@@ -71,10 +64,6 @@ PATHS AND MEDIA QUERY PATHS WOULD NEED TO BE AMMENDED. DO THIS AT
         </div>
       </section>
     </main>
-
-    <!-- TO DO: ADD BACKGROUND OVERLAY IN SHOWCASE TO MAKE TEXT MORE READABLE,
-    THEN YOU CAN GET RID OF THE SEMI-TRANSPARENT NAV BACKGROUND -->
-    <!-- End Showcase and Navigation -->
 
     <!-- Services -->
     <section id="services">
@@ -96,27 +85,121 @@ PATHS AND MEDIA QUERY PATHS WOULD NEED TO BE AMMENDED. DO THIS AT
         </div>
       </div>
     </section>
-    <!-- End Services -->
-    <!-- Storage, customer satisfaction, and support boxes -->
 
-    <!-- END Storage, customer satisfaction, and support boxes -->
+    <!-- Storage, customer satisfaction, and support boxes -->
+    <section id="serviceBoxes">
+      <div class="boxes-container">
+        <div class="box1 box">
+          <h1>High-Speed Storage</h1>
+          <i class="fas fa-server"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptatum beatae doloribus eum corrupti recusandae dolore amet odio
+            magnam commodi!
+          </p>
+        </div>
+        <div class="box2 box">
+          <h1>Live Chat Support</h1>
+          <i class="far fa-comments"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptatum beatae doloribus eum corrupti recusandae dolore amet odio
+            magnam commodi!
+          </p>
+        </div>
+        <div class="box3 box">
+          <h1>Efficient Topology</h1>
+          <i class="fas fa-network-wired"></i>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptatum beatae doloribus eum corrupti recusandae dolore amet odio
+            magnam commodi!
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Cloud hosting has never been this smart fixed background section -->
-
-    <!-- END Cloud hosting has never been this smart fixed background section -->
+    <section id="blurb">
+      <h1>Cloud Hosting Has Never Been This Smart.</h1>
+      <h3>
+        Click the button below to read how we took the industry standard
+        Infrastructure as a Service and reimagined it.
+      </h3>
+      <button class="btn">Learn More</button>
+    </section>
 
     <!-- About Section -->
-
-    <!-- End About Section -->
+    <!-- THE ABOUT SECTION USES THE SAME STYLES AS THE SERVICES SECTION.
+    THE IDS AND CLASSES ARE THE SAME. -->
+    <section id="services2">
+      <section id="services">
+        <div class="container">
+          <div class="services-info">
+            <h1>About The Sky<span class="highlight">Net</span> Team</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              modi voluptas impedit facilis. Laborum nisi, incidunt, possimus
+              optio tempora ab quas illum accusamus quia velit repellat
+              explicabo culpa maxime magni numquam laboriosam hic perferendis
+              eos! Incidunt veritatis laboriosam blanditiis error. Soluta,
+              minus. Explicabo accusantium veritatis maiores totam quidem et
+              iste.
+            </p>
+            <button class="btn">Learn More</button>
+          </div>
+          <div class="services-icon">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </section>
+    </section>
 
     <!-- Contact -->
-
-    <!-- END Contact -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="form-headers">
+          <div class="form-header-container">
+            <h1>Don't Have Time To Chat? Drop Us a Line.</h1>
+            <h3>We Pride Ourselves On Fast Turnaround Time.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium vero maxime non a repellat quaerat facere nesciunt.
+              Enim provident cumque nostrum suscipit quae mollitia consequuntur,
+              incidunt commodi, reiciendis dolor fuga?
+            </p>
+          </div>
+        </div>
+        <form class="main-form">
+          <div class="main-form-container">
+            <label for="firstName">First Name</label>
+            <input type="text" />
+            <label for="lastName">Last Name</label>
+            <input type="text" />
+            <label for="email">Email</label>
+            <input type="email" />
+            <label for="message">Message</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- Footer -->
 
-    <!-- END Footer -->
+    <footer id="main-footer">
+      <div class="div">
+        <h1>Sky<span class="highlight">Net</span></h1>
+        <h5>Designed by Bradley Caravana &copy; 2020</h5>
+      </div>
+    </footer>
 
-    <script src="/javascript/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>

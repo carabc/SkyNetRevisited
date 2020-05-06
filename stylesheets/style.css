@@ -117,7 +117,7 @@ body {
 #showcase-nav #main-nav .responsive-nav .nav-item a {
   text-decoration: none;
   color: #ffffff;
-  margin: 10px;
+  font-size: 20px;
 }
 
 #showcase-nav #main-nav .responsive-nav,
@@ -130,14 +130,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0px 0px 10px 0px black;
   padding: 10px;
-  /*PLANS FOR STICKY NAV ON SCROLL*/
   position: fixed;
   width: 100%;
-  /* END PLANS FOR STICKY NAV ON SCROLL */
   transition: all 0.2s;
-  z-index: 3;
+  z-index: 1000;
 }
 
 #main-nav .brand a {
@@ -223,6 +220,141 @@ body {
 }
 /* END Services */
 
+/* Service Boxes */
+
+#serviceBoxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  background: var(--blueOne);
+  color: #000;
+}
+
+#serviceBoxes .boxes-container {
+  display: flex;
+  padding: 1em;
+}
+
+#serviceBoxes .boxes-container .box {
+  text-align: center;
+  padding: 1em;
+}
+
+#serviceBoxes .boxes-container .box i {
+  font-size: 4em;
+}
+
+/* END Service Boxes */
+
+/* Blurb */
+
+#blurb {
+  background: url("../img/lowres.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+
+#blurb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--blueTwoOpacity);
+  z-index: 0;
+}
+
+#blurb > * {
+  z-index: 5;
+  position: relative;
+}
+
+#blurb .btn {
+  color: #fff;
+}
+
+/* END Blurb */
+
+/* Contact */
+#contact {
+  padding: 1em;
+  background: var(--blueOne);
+  color: #000;
+}
+
+#contact .contact-container {
+  display: flex;
+  padding: 1em;
+}
+
+#contact .contact-container .form-headers {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+#contact .contact-container .main-form {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .contact-container .main-form .main-form-container {
+  width: 50%;
+  margin: auto;
+}
+
+#contact .contact-container .main-form .main-form-container input,
+#contact .contact-container .main-form .main-form-container textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
+#contact .contact-container .main-form .main-form-container label {
+  font-size: 1.5em;
+}
+
+.main-form-container .btn {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+  background: var(--blueTwo);
+  color: #fff;
+}
+
+.main-form-container .btn:hover {
+  background: var(--successDark);
+}
+/* END Contact */
+
+/* Footer */
+
+#main-footer {
+  background: var(--blueTwo);
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+}
+
+#main-footer h1,
+#main-footer h5 {
+  margin: 0;
+}
+
+/* END Footer */
+
 /*MEDIA QUERIES*/
 
 /* MOBILE */
@@ -289,5 +421,73 @@ body {
   #services .container .services-info {
     margin: 1em 0 0 0;
     padding: 0;
+  }
+
+  /* Service Boxes */
+  #serviceBoxes {
+    padding: 0;
+  }
+
+  #serviceBoxes .boxes-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* Contact */
+  #contact .contact-container {
+    flex-direction: column;
+  }
+
+  #contact .contact-container .main-form {
+    padding: 0;
+  }
+
+  #contact .contact-container .main-form .main-form-container {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 584px) and (max-width: 800px) {
+  /* Services/About*/
+  #services .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+  }
+
+  #services .container .services-icon {
+    order: 1;
+  }
+
+  #services .container .services-info {
+    order: 2;
+  }
+  /* Service Boxes */
+  #serviceBoxes {
+    padding: 0;
+  }
+
+  #serviceBoxes .boxes-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* Contact */
+  #contact .contact-container {
+    flex-direction: column;
+  }
+
+  #contact .contact-container .main-form .main-form-container {
+    width: 100%;
+  }
+}
+
+/* Laptops */
+@media screen and (min-width: 801px) and (max-width: 1796px) {
+  /* Contact */
+  #contact .contact-container .main-form .main-form-container {
+    width: 100%;
   }
 }
