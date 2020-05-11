@@ -64,7 +64,7 @@ body {
   height: 100vh;
   background: url(../img/OptimizedImg1.jpeg);
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* OVERLAY */
@@ -175,6 +175,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 #showcase .title-container .btn {

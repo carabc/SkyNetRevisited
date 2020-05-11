@@ -44,6 +44,22 @@ function revealMenu() {
   }
 }
 
+//Parallax
+const landingTitles = document.querySelector("#showcase .title-container");
+const showcaseHeight = document.querySelector("#showcase-nav").offsetHeight;
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY < showcaseHeight) {
+    console.log(
+      `scrolling, Pixels From Top: ${window.scrollY}, Height of Showcase: ${showcaseHeight}`
+    );
+    landingTitles.style.transform = `translate(0, ${window.scrollY / 2}%)`;
+    document.querySelector("#showcase-nav").style.backgroundPositionY = `${
+      window.scrollY / 1.5
+    }%`;
+  }
+});
+
 // Activate Smooth Scroll With jQuery
 $("#main-nav a").on("click", function (e) {
   if (this.hash !== "") {
